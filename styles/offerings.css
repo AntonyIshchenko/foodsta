@@ -1,0 +1,201 @@
+.offerings-container {
+  padding-top: 410px;
+  padding-bottom: 72px;
+
+  background-image: url(../images/offerings/mob-apple-group.png),
+    url(../images/offerings/mob-offerings-back.png);
+  background-position: bottom 772px center, bottom;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+}
+
+@media (min-resolution: 192dpi) {
+  .offerings-container {
+    background-image: url(../images/offerings/mob-apple-group@2x.png),
+      url(../images/offerings/mob-offerings-back@2x.png);
+  }
+}
+
+.offerings-heading {
+  font-size: 28px;
+  line-height: normal;
+  margin-bottom: 28px;
+}
+
+.offerings-text {
+  font-size: 14px;
+  line-height: 1.43;
+  margin-bottom: 28px;
+}
+
+.offerings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.offerings-list-item-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.offering-list-item-heading {
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.offering-list-item-text {
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.offerings-actions-container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.offerings-order-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 106px;
+  height: 40px;
+  border-radius: 30px;
+  border: 2px solid var(--dark-green-color);
+  background-color: var(--white-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--black-color);
+
+  transition: background-color var(--duration) var(--time-function),
+    border var(--duration) var(--time-function);
+}
+
+.offerings-order-button:hover,
+.offerings-order-button:focus {
+  border: none;
+  background-color: var(--button-green-color);
+}
+
+.offerings-link {
+  color: var(--black-color);
+  font-size: 14px;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offerings-link-icon-container {
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.offerings-link-icon {
+  align-self: center;
+  fill: var(--black-color);
+}
+
+@media (min-width: 768px) {
+  .offerings-container {
+    padding-top: 604px;
+    padding-bottom: 88px;
+
+    background-image: url(../images/offerings/tabl-apple-group.png),
+      url(../images/offerings/tabl-offerings-back.png);
+    background-position: bottom 596px center, bottom;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .offerings-container {
+      background-image: url(../images/offerings/tabl-apple-group@2x.png),
+        url(../images/offerings/tabl-offerings-back@2x.png);
+    }
+  }
+
+  .offerings-heading {
+    font-size: 42px;
+    line-height: normal;
+    margin-bottom: 20px;
+    max-width: 526px;
+  }
+
+  .offerings-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    max-width: 500px;
+  }
+
+  .offerings-list {
+    flex-direction: row;
+    gap: 80px;
+    margin-bottom: 40px;
+  }
+
+  .offerings-list-item-text {
+    max-width: 288px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .offerings-container {
+    padding-top: 260px;
+    padding-bottom: 79px;
+    padding-left: 656px;
+
+    background-image: url(../images/offerings/desc-apple-group.png),
+      url(../images/offerings/desk-offerings-back.png);
+    background-position: left 16px bottom 43px, bottom;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .offerings-container {
+      background-image: url(../images/offerings/desc-apple-group@2x.png),
+        url(../images/offerings/desk-offerings-back@2x.png);
+    }
+  }
+
+  .offerings-heading {
+    line-height: 1.2;
+  }
+
+  .offerings-text {
+    margin-bottom: 40px;
+  }
+
+  .offerings-list {
+    flex-direction: row;
+    gap: 67px;
+    margin-bottom: 32px;
+  }
+
+  .offering-list-item-heading {
+    line-height: 1.4;
+  }
+
+  .offerings-list-item-text {
+    line-height: 1.5;
+    max-width: 253px;
+  }
+
+  .offerings-link {
+    display: none;
+  }
+}

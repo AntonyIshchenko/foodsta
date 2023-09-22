@@ -1,57 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodSta - delivery service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
 
-        <link rel="stylesheet" href="./styles/styles.css" />
-    </head>
-    <body>
-        <!-- HEADER -->
-        <!-- HERO-->
-        <!-- OFFERINGS -->
-        <section>
-            <img src="./img/Special_Offering/aple.png" alt="apple" />
-            <h2>What’s Special About Our Offerings</h2>
-            <p>
-                With our platform, you can browse through a diverse selection of
-                cuisines and local restaurants, and choose from a variety of
-                dishes that cater to your specific taste buds.
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <section class="header-section">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./index.html">
+            <svg width="66" height="52">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="header-nav-list list">
+            <li><a class="header-home-link" href="">Home</a></li>
+            <li><a class="header-link link" href="">About</a></li>
+            <li><a class="header-link link" href="">Service</a></li>
+            <li><a class="header-link link" href="">Menu</a></li>
+            <li><a class="header-link link" href="">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="header-order-button">Order Now</button>
+        <button class="header-mobile-menu-button svg-button">
+          <svg width="28" height="28">
+            <use href="images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- HERO-->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <h1 class="hero-heading">Enjoy Your Favorite Food From Anywhere</h1>
+        <p class="hero-text">
+          With just a few clicks, you can have your favorite meals delivered straight to
+          your doorstep, no matter where you are. Order now and enjoy a hassle-free and
+          delicious meal from the comfort of your own home.
+        </p>
+        <button class="hero-order-button">Order Now</button>
+        <div class="hero-slide">
+          <div class="hero-slide-img-container">
+            <img
+              class="hero-slide-img"
+              src="./images/hero/desk-foto1.png"
+              alt="hero-image-1"
+            />
+            <img
+              class="hero-slide-img"
+              src="./images/hero/desk-foto2.png"
+              alt="hero-image-2"
+            />
+            <img
+              class="hero-slide-img"
+              src="./images/hero/desk-foto3.png"
+              alt="hero-image-3"
+            />
+          </div>
+
+          <button
+            class="hero-slide-back-button svg-button"
+            type="button"
+            onclick="prevSlide()"
+          >
+            <svg class="hero-slide-icon">
+              <use href="./images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+
+          <button
+            class="hero-slide-next-button svg-button"
+            type="button"
+            onclick="nextSlide()"
+          >
+            <svg class="hero-slide-icon">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFERINGS -->
+    <section class="offerings-section">
+      <div class="container offerings-container">
+        <h2 class="offerings-heading">What’s Special About Our Offerings</h2>
+        <p class="offerings-text">
+          With our platform, you can browse through a diverse selection of cuisines and
+          local restaurants, and choose from a variety of dishes that cater to your
+          specific taste buds.
+        </p>
+        <ul class="offerings-list list">
+          <li class="offerings-list-item">
+            <div class="offerings-list-item-icon-container">
+              <svg class="offerings-list-item-icon" width="32" height="32">
+                <use href="/images/icons.svg#icon-rocket-launch"></use>
+              </svg>
+            </div>
+            <h3 class="offering-list-item-heading">Fasest Delivery</h3>
+            <p class="offering-list-item-text">
+              Our advanced logistics system and dedicated delivery partners ensure that
+              your meals are delivered to you within 30-minutes.
             </p>
-            <ul>
-                <li>
-                    <h3>Fasest Delivery</h3>
-                    <p>
-                        Our advanced logistics system and dedicated delivery
-                        partners ensure that your meals are delivered to you
-                        within 30-minutes.
-                    </p>
-                </li>
-                <li>
-                    <h3>Easy To Order</h3>
-                    <p>
-                        You can browse through a wide variety of cuisines and
-                        restaurants, select your favorite meals, and place your
-                        order in just a few clicks.
-                    </p>
-                </li>
-            </ul>
-            <button type="button">Order Now</button>
-        </section>
-        <!-- FAVORITES-->
-        <!-- CUSTOMERS-->
-        <!-- SUBSCRIBE-->
-        <!-- FOOTER-->
-    </body>
+          </li>
+          <li class="offerings-list-item">
+            <div class="offerings-list-item-icon-container">
+              <svg class="offerings-list-item-icon" width="32" height="32">
+                <use href="/images/icons.svg#icon-touch-app"></use>
+              </svg>
+            </div>
+            <h3 class="offering-list-item-heading">Easy To Order</h3>
+            <p class="offering-list-item-text">
+              You can browse through a wide variety of cuisines and restaurants, select
+              your favorite meals, and place your order in just a few clicks.
+            </p>
+          </li>
+        </ul>
+        <div class="offerings-actions-container">
+          <button class="offerings-order-button" type="button">Order Now</button>
+          <a class="offerings-link link" href=""
+            >Read More
+            <span class="offerings-link-icon-container">
+              <svg class="offerings-link-icon" width="14" height="14">
+                <use href="./images/icons.svg#icon-chevron-down"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAVORITES-->
+    <!-- CUSTOMERS-->
+    <!-- SUBSCRIBE-->
+    <!-- FOOTER-->
+
+    <script src="./scripts/main.js"></script>
+  </body>
 </html>

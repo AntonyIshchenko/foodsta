@@ -1,0 +1,100 @@
+:root {
+    --black-color: #2c2c2c;
+    --button-green-color: #bbf330;
+    --dark-green-color: #7eb101;
+    --white-color: #fefefe;
+    --yellow-main-color: #ffe550;
+    --shadow-fruit: radial-gradient(
+        50% 50% at 50% 50%,
+        #2f583f 0%,
+        rgba(105, 105, 105, 0) 100%
+    );
+
+    --duration: 250ms;
+    --time-function: ease-out;
+}
+
+/* Стилі для обнулення верхніх відступів у елементів */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+/* Клас для обнулення базових властивостей списків (ul) */
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Клас для обнулення базових властивостей у посилань */
+.link {
+    text-decoration: none;
+}
+
+/* Властивості для коректного відображення картинок */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Властивості для обнулення курсиву address */
+address {
+    font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+.svg-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    padding: 0;
+    border: 0;
+}
+
+@media (min-width: 320px) {
+    .container {
+        max-width: 320px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
