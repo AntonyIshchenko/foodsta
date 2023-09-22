@@ -1,9 +1,9 @@
-@import './styles/base.css';
+@import './base.css';
 
-@import './styles/header.css';
+@import './header.css';
 
-@import './styles/hero.css';
-@import './styles/offerings.css';
-@import './styles/favorites.css';
-@import './styles/customers.css';
-@import './styles/subscribe.css';
+@import './hero.css';
+@import './offerings.css';
+@import './favorites.css';
+@import './customers.css';
+@import './subscribe.css';
