@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodSta - delivery service</title>
+    <link rel="icon" type="image/svg+xml" href="./src/icons/favicon.svg" />
+    <link rel="mask-icon" href="./src/icons/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -64,27 +66,84 @@
         <button class="hero-order-button">Order Now</button>
         <div class="hero-slide">
           <div class="hero-slide-img-container">
-            <img
-              class="hero-slide-img"
-              src="./images/hero/desk-foto1.png"
-              alt="hero-image-1"
-            />
-            <img
-              class="hero-slide-img"
-              src="./images/hero/desk-foto2.png"
-              alt="hero-image-2"
-            />
-            <img
-              class="hero-slide-img"
-              src="./images/hero/desk-foto3.png"
-              alt="hero-image-3"
-            />
+            <picture class="hero-slide-img">
+              <source
+                media="(min-width:1280px)"
+                srcset="
+                  ./images/hero/desk-foto1.png    1x,
+                  ./images/hero/desk-foto1@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./images/hero/tabl-foto1.png    1x,
+                  ./images/hero/tabl-foto1@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                media="(max-width:767px)"
+                srcset="./images/hero/mob-foto1.png 1x, ./images/hero/mob-foto1@2x.png 2x"
+                type="image/png"
+              />
+              <img src="./images/hero/desk-foto1.png" alt="hero-image-1" loading="lazy" />
+            </picture>
+            <picture class="hero-slide-img">
+              <source
+                media="(min-width:1280px)"
+                srcset="
+                  ./images/hero/desk-foto2.png    1x,
+                  ./images/hero/desk-foto2@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./images/hero/tabl-foto2.png    1x,
+                  ./images/hero/tabl-foto2@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                media="(max-width:767px)"
+                srcset="./images/hero/mob-foto2.png 1x, ./images/hero/mob-foto2@2x.png 2x"
+                type="image/png"
+              />
+              <img src="./images/hero/desk-foto2.png" alt="hero-image-2" loading="lazy" />
+            </picture>
+            <picture class="hero-slide-img">
+              <source
+                media="(min-width:1280px)"
+                srcset="
+                  ./images/hero/desk-foto3.png    1x,
+                  ./images/hero/desk-foto3@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./images/hero/tabl-foto3.png    1x,
+                  ./images/hero/tabl-foto3@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                media="(max-width:767px)"
+                srcset="./images/hero/mob-foto3.png 1x, ./images/hero/mob-foto3@2x.png 2x"
+                type="image/png"
+              />
+              <img src="./images/hero/desk-foto3.png" alt="hero-image-3" loading="lazy" />
+            </picture>
           </div>
 
           <button
             class="hero-slide-back-button svg-button"
             type="button"
-            onclick="prevSlide()"
+            id="slidePrevButton"
           >
             <svg class="hero-slide-icon">
               <use href="./images/icons.svg#icon-arrow-left"></use>
@@ -94,7 +153,7 @@
           <button
             class="hero-slide-next-button svg-button"
             type="button"
-            onclick="nextSlide()"
+            id="slideNextButton"
           >
             <svg class="hero-slide-icon">
               <use href="./images/icons.svg#icon-arrow-right"></use>
@@ -158,7 +217,7 @@
     <!-- SUBSCRIBE-->
     <!-- FOOTER-->
 
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/hero-slides.js"></script>
     <script src="./scripts/mobile-menu.js"></script>
   </body>
 </html>

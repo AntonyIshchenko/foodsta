@@ -1,17 +1,17 @@
+document.querySelector('#slidePrevButton').onclick = function () {
+  showSlide(-1);
+};
+
+document.querySelector('#slideNextButton').onclick = function () {
+  showSlide(1);
+};
+
 const slides = document.getElementsByClassName('hero-slide-img');
 const slidesLenght = slides.length;
 
 var slideIndex = 0;
 hideSlides();
 showSlide(1);
-
-function prevSlide() {
-  showSlide(-1);
-}
-
-function nextSlide() {
-  showSlide(1);
-}
 
 function hideSlides() {
   for (i = 0; i < slidesLenght; i++) {

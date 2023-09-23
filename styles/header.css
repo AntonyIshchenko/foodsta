@@ -23,6 +23,7 @@
   .header-mobile-menu-button {
     width: 28px;
     height: 28px;
+    background-color: var(--white-color);
 
     fill: var(--dark-green-color);
     transition: fill var(--duration) var(--time-function);
