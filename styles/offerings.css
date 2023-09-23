@@ -5,6 +5,7 @@
   background-image: url(../images/offerings/mob-apple-group.png),
     url(../images/offerings/mob-offerings-back.png);
   background-position: bottom 772px center, bottom;
+  background-size: 280px, cover;
   background-repeat: no-repeat;
   background-clip: border-box;
 }
@@ -120,6 +121,7 @@
     background-image: url(../images/offerings/tabl-apple-group.png),
       url(../images/offerings/tabl-offerings-back.png);
     background-position: bottom 596px center, bottom;
+    background-size: 704px, cover;
   }
 
   @media (min-resolution: 192dpi) {
@@ -163,6 +165,7 @@
     background-image: url(../images/offerings/desc-apple-group.png),
       url(../images/offerings/desk-offerings-back.png);
     background-position: left 16px bottom 43px, bottom;
+    background-size: 550px, cover;
   }
 
   @media (min-resolution: 192dpi) {
